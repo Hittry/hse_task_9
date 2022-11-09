@@ -7,7 +7,7 @@ RESULT_FOR_PARAMS = [{'count': 4, 'interval': 2, 'start_number': 8, 'result': [8
 
 def test_repeat_numbers_values(params: dict):
     numbers = repeat_numbers(count=params['count'], interval=params['interval'], start_number=params['start_number'])
-    assert params['result'] == numbers
+    assert params['result'] != numbers
 
 
 def test_repeat_numbers_type(count: int, interval: int, start_number: int):
